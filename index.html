@@ -6,18 +6,19 @@
 </head>
 <body>
     <form action="https://formspree.io/f/xvovwyvr" method="POST">
-        <input type="email" name="_replyto">
-        <textarea name="body"></textarea>
-        <input type="submit" value="Send">
-    </form>
+        <label for="txtMail">Su Mail:</label>
+        <input id="txtMail" type="email" name="_replyto"><br><br>
+        
+        <label for="txtName">Su nombre:</label>
+        <input id="txtName" type="text"><br><br>
 
-    <!-- <form action="">
-        <label for="correo">Ingresar correo:</label>
-        <input type="email" name="" id="correo">
-        <input type="button" action="send" value="Enviar"><br><br>
-        <button id="btnSendMail">Enviar</button>
-    </form> -->
-    
+        <label for="txtCompanyName">Nombre de la empresa:</label>
+        <input id="txtCompanyName" type="text"><br><br>
+
+        <label for="txtMensaje">Mensaje:</label><br>
+        <textarea id="txtMensaje" name="body"></textarea><br><br>
+        <input type="submit" value="Send">
+    </form>    
     <script src="App.js"></script>
 </body>
 </html>
