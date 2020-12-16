@@ -39,33 +39,18 @@ function setMessage() {
     txtMensaje.value += text[3];
     txtMensaje.value += text[4];
 
-    // txtMensaje.value = "Hola, mi nombre es " + txtName.value + ", te contacto de la empresa "
-    //     + txtCompanyName.value + " para solicitarte una copia de tu correo electrónico. \n"
-    //     + "Saludos.";
 }
 
-const formSendMail = document.getElementById("formSendMail");
+// const formSendMail = document.getElementById("formSendMail");
 
-formSendMail.addEventListener("submit", function(event) {
-    event.preventDefault();
+// formSendMail.addEventListener("submit", function(event) {
+//     event.preventDefault();
     
-    if (document.querySelector("#txtMail").value.length === 0) {
-        alert("Debe indicar su correo");
-    } else {
-        formSendMail.action = "https://formspree.io/f/xvovwyvr";
-    }
+//     if (document.querySelector("#txtMail").value.length === 0) {
+//         alert("Debe indicar su correo");
+//     } else {
+//         formSendMail.action = "https://formspree.io/f/xvovwyvr"; // no :)
+//     }
 
-});
+// });
 
-txtMensaje.addEventListener("click", function(event) {
-    
-});
-
-/**
- * 
- * ¡Hola! \n
- * Mi nombre es (nombre). \n
- * Te contacto de la empresa (nombreEmpresa). \n
- * Quisiera solicitarte una copia de tu Curriculum en PDF. \n
- * Saludos!
- */

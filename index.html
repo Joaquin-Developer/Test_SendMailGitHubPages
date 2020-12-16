@@ -5,16 +5,15 @@
     <title>Prueba de envio de correos con GitHub Pages</title>
 </head>
 <body>
-    <!-- action="https://formspree.io/f/xvovwyvr" -->
-    <form id="formSendMail"  method="POST">
+    <form action="https://formspree.io/f/xvovwyvr" id="formSendMail"  method="POST">
         <label for="txtMail">Su Mail:</label>
-        <input id="txtMail" type="email" name="_replyto"><br><br>
+        <input id="txtMail" type="email" required name="_replyto"><br><br>
         <label for="txtName">Su nombre:</label>
         <input id="txtName" type="text"><br><br>
         <label for="txtCompanyName">Nombre de la empresa:</label>
         <input id="txtCompanyName" type="text"><br><br>
         <label for="txtMensaje">Mensaje:</label><br>
-        <textarea id="txtMensaje" name="body"></textarea><br><br>
+        <textarea id="txtMensaje" name="body" required cols="50" rows="7"></textarea><br><br>
         <input type="submit" value="Send">
     </form>    
     <script src="App.js"></script>
