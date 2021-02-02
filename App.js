@@ -3,14 +3,14 @@
  */
 
 // let name, companyName, message;
-let txtName = document.getElementById("txtName"); 
-let txtCompanyName = document.getElementById("txtCompanyName");
-let txtMensaje = document.getElementById("txtMensaje");
+const txtName = document.querySelector("#txtName"); 
+const txtCompanyName = document.querySelector("#txtCompanyName");
+const txtMensaje = document.querySelector("#txtMensaje");
 
 addEventListener("load", function() {
     // datos de ejemplo al cargar el html
     txtName.value = "Juan"; 
-    txtCompanyName.value = "Empresa X";
+    txtCompanyName.value = "Tech S.A.";
     setMessage();
 });
 
